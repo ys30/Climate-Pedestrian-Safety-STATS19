@@ -10,6 +10,20 @@ A reproducible **UK STATS19** case study examining how environmental, road, temp
 - **Methods:** binary logistic regression, multinomial logistic regression, interaction specifications, ROC/AUC and confusion-matrix evaluation
 - **Tools:** R, `stats19`, `dplyr`, `nnet`, `pROC`
 
+## Results figures
+
+### Injury severity distribution
+
+![Pedestrian injury severity distribution](figures/severity-distribution.svg)
+
+### Weather context
+
+![Weather conditions at pedestrian incidents](figures/weather-distribution.svg)
+
+### Model performance
+
+![Model AUC comparison](figures/model-auc.svg)
+
 ### Injury severity
 
 | Severity | Count | Share |
@@ -49,6 +63,10 @@ The climate-safety interpretation is deliberately cautious. Most recorded pedest
 │   ├── 01_prepare_data.R
 │   ├── 02_eda.R
 │   └── 03_models.R
+├── figures/
+│   ├── severity-distribution.svg
+│   ├── weather-distribution.svg
+│   └── model-auc.svg
 ├── results/
 │   ├── severity_summary.csv
 │   ├── weather_summary.csv
