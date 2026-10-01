@@ -1,0 +1,10 @@
+weather_conditions,count
+Fine no high winds,17026
+Raining no high winds,1909
+Unknown,826
+Other,632
+Fine + high winds,224
+Raining + high winds,172
+Snowing no high winds,62
+Fog or mist,60
+Snowing + high winds,16
