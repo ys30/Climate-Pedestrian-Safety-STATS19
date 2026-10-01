@@ -1,0 +1,7 @@
+model,AUC
+Multinomial - full,0.9007
+Multinomial - reduced,0.8986
+Multinomial - interactions,0.8987
+Binary - full,0.6576
+Binary - interactions,0.6523
+Binary - reduced,0.6510
