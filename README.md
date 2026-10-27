@@ -1,6 +1,6 @@
 # Climate, Environment & Pedestrian Safety
 
-A reproducible **UK STATS19** case study examining how environmental, road, temporal, and human factors relate to pedestrian injury severity.
+A portfolio-oriented **2022 UK STATS19** case study examining how environmental, road, temporal, and human factors relate to pedestrian injury severity.
 
 ## Project snapshot
 
@@ -36,7 +36,7 @@ Fatal or serious injuries account for **31.1%** of the analytic records.
 
 ### Model discrimination
 
-The final model comparison reported the following ROC AUC values for predicting fatal outcomes:
+The following archived AUC values are reported in `results/model_auc.csv`. **They are not directly comparable as a single leaderboard:** the binary models target *Fatal-or-Serious versus Slight*, while the multinomial analysis code evaluates *Fatal versus all other levels* using predicted Fatal probabilities. Moreover, the supplied code does not establish an independent held-out test-set evaluation.
 
 | Specification | AUC |
 |---|---:|
@@ -47,7 +47,7 @@ The final model comparison reported the following ROC AUC values for predicting 
 | Binary — interactions | 0.6523 |
 | Binary — reduced | 0.6510 |
 
-These are model-discrimination results, not causal effect estimates.
+These are descriptive model-discrimination results, not causal effects or independently validated out-of-sample performance.
 
 ## Research framing
 
@@ -87,6 +87,10 @@ The climate-safety interpretation is deliberately cautious. Most recorded pedest
 ## Portfolio
 
 See the companion case study on the [Yu Song portfolio](https://ys30.github.io/projects/extreme-weather-pedestrian-safety.html).
+
+## Version and interpretation boundaries
+
+This repository documents the **2022 severity-model portfolio reconstruction**, not the later weather-exposure, urban–rural interaction, or multi-year robustness analyses. Do not combine its casualty counts, AUCs, or outcomes with later research estimates without reproducing the relevant specifications. The denominator represents recorded pedestrian casualties, not all pedestrian trips or weather-specific population exposure.
 
 ## Scope
 
